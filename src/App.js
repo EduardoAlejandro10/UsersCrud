@@ -58,7 +58,9 @@ const [isShowing, setIsShowing] = useState(false);
       {
 
         isShowing ? 
-        <UsersForm addUser={addUser} 
+        <UsersForm 
+        editUser={editUser}
+        addUser={addUser} 
         unselectedUser={unselectedUser} 
         selectedUser={selectedUser}/> : null
 
